@@ -8,6 +8,14 @@ class DatePickerInput < SimpleForm::Inputs::StringInput
         'date-format': I18n.t('date.formats.date_picker')
       }
     }
+
+    options[:data][:'icon-provider'] = case @options[:icons]
+    when :font_awesome
+      'fa'
+    else
+      nil
+    end
+
     super.merge options
   end
 end

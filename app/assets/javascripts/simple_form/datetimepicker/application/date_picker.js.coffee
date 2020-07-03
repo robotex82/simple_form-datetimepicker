@@ -5,23 +5,24 @@ $ ->
     if moment.isDate(date)
       options = {
         defaultDate: moment(date, format),
-        format: format
+        format: format,
       }
     else
       options = {
-        format: format
+        format: format,
+        sideBySide: true
       }
 
     if $(this).data('icon-provider') == 'fa'
       options['icons'] = {
-        time: "fa fa-clock-o",
-        date: "fa fa-calendar",
-        up: "fa fa-caret-up",
-        down: "fa fa-caret-down",
-        previous: "fa fa-caret-left",
-        next: "fa fa-caret-right",
-        today: "fa fa-today",
-        clear: "fa fa-clear",
-        close: "fa fa-close"
+        time: "fas fa-clock",
+        date: "fas fa-calendar",
+        up: "fas fa-caret-up",
+        down: "fas fa-caret-down",
+        previous: "fas fa-caret-left",
+        next: "fas fa-caret-right",
+        today: "fas fa-today",
+        clear: "fas fa-clear",
+        close: "fas fa-close"
       }
     $(this).datetimepicker(options)
