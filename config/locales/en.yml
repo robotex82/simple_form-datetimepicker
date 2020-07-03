@@ -1,0 +1,7 @@
+en:
+  date:
+    formats:
+      date_picker: 'YYYY-MM-DD'
+  time:
+    formats:
+      date_picker: 'YYYY-MM-DD hh:mm:ss'
