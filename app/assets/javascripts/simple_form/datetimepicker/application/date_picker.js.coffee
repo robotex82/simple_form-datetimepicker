@@ -10,7 +10,7 @@ $ ->
     else
       options = {
         format: format,
-        sideBySide: true
+        sideBySide: $(this).data('side-by-side') == true ? true : false
       }
 
     if $(this).data('icon-provider') == 'fa'

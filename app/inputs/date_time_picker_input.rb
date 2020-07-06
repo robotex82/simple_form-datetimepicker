@@ -5,9 +5,10 @@ class DateTimePickerInput < SimpleForm::Inputs::StringInput
       value: value.nil?? nil : I18n.localize(value),
       data: {
         behaviour: 'date_picker',
-        'date-format':  I18n.t('time.formats.date_picker')
+        'date-format':  @options[:format] || I18n.t('time.formats.date_picker')
       }
     }
+    options[:data][:'side-by-side'] =  @options[:'side_by_side'] || false
     options[:data][:'icon-provider'] = case @options[:icons]
     when :font_awesome
       'fa'
