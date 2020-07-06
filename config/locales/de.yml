@@ -1,7 +1,9 @@
 de:
   date:
     formats:
-      date_picker: 'DD.MM.YYYY'
+      date_picker: '%d.%m.%Y'
+      date_picker_js: 'DD.MM.YYYY'
   time:
     formats:
-      date_picker: 'DD.MM.YYYY HH:mm:ss'
+      date_picker: '%d.%m.%Y %H:%M:%S'
+      date_picker_js: 'DD.MM.YYYY HH:mm:ss'
