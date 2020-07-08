@@ -1,3 +1,9 @@
 .bundle/
 log/*.log
 pkg/
+
+# Ignore built gems
+*.gem
+
+# Ignore backup files
+*~
