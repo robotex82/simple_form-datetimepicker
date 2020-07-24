@@ -7,7 +7,7 @@ class DateTimePickerInput < SimpleForm::Inputs::StringInput
       }
     }
 
-    value = if object.respond_to?(attribute_name)
+    value = if object.respond_to?(attribute_name) && object.send(attribute_name).present?
       I18n.localize(object.send(attribute_name), format: :date_picker)
     end
 
