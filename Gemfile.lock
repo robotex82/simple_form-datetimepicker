@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    simple_form-datetimepicker (0.0.2)
+    simple_form-datetimepicker (0.0.3)
       bootstrap3-datetimepicker-rails
       coffee-rails
       momentjs-rails
@@ -81,7 +81,7 @@ GEM
     execjs (2.7.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    i18n (1.8.3)
+    i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     loofah (2.6.0)
       crass (~> 1.0.2)
@@ -145,7 +145,7 @@ GEM
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.3.1)
+    zeitwerk (2.4.0)
 
 PLATFORMS
   ruby
