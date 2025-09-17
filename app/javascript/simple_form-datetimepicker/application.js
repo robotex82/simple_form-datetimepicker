@@ -1,4 +1,5 @@
 // Import dependencies (these will be resolved by importmap)
+import $ from "jquery"
 import moment from "moment"
 import "bootstrap-datetimepicker"
 
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
       };
     }
     
-    // Assuming jQuery is available globally or imported elsewhere
+    // Now $ is properly imported from jQuery
     $(element).datetimepicker(options);
   });
 });
