@@ -3,17 +3,16 @@ Short description and motivation.
 
 ## Usage
 
-Add the javascripts:
+Add the JavaScript to your application:
 
-    # app/assets/application.js
-    //= require simple_form-datetimepicker
+    # app/javascript/application.js
+    import "simple_form-datetimepicker"
 
-Add the stylesheets:
+Add the CSS to your application:
 
-    # app/assets/application.css
-    /*
-     *= require simple_form-datetimepicker
-     */
+    # app/assets/stylesheets/application.css
+    @import "bootstrap-datetimepicker";
+    @import "simple_form-datetimepicker";
 
 Use in in your simple form:
 

@@ -8,6 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
   const datePickers = document.querySelectorAll("input[data-behaviour='date_picker']");
   
   datePickers.forEach(function(element) {
+    // Find the proper container - look for .form-group or create a positioned parent
+    let container = element.closest('.form-group') || element.closest('.input-group') || element.parentElement;
+    
+    // Ensure the container has proper positioning
+    const computedStyle = window.getComputedStyle(container);
+    if (computedStyle.position === 'static') {
+      container.style.position = 'relative';
+    }
+    
     const date = element.value;
     const format = element.dataset.dateFormat;
     let options = {};
@@ -38,7 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
       };
     }
     
-    // Now $ is properly imported from jQuery
-    $(element).datetimepicker(options);
+    // Apply datetimepicker to the input, but ensure proper container positioning
+    try {
+      $(element).datetimepicker(options);
+    } catch (error) {
+      console.error('Error initializing datetimepicker:', error);
+    }
   });
 });
