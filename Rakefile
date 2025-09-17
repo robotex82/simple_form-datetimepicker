@@ -8,10 +8,14 @@ require 'rdoc/task'
 
 RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'SimpleForm::Datetimepicker'
+  rdoc.title    = 'SimpleForm DateTime Picker'
   rdoc.options << '--line-numbers'
   rdoc.rdoc_files.include('README.md')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+# broken in rails 8.0
+# # broken in rails 8.0
+# load 'rails/tasks/statistics.rake'
 
 require 'bundler/gem_tasks'

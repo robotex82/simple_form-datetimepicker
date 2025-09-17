@@ -1,6 +1,7 @@
 .bundle/
 log/*.log
 pkg/
+spec/dummy
 
 # Ignore built gems
 *.gem
