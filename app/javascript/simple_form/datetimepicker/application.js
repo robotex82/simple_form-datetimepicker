@@ -3,6 +3,11 @@ import $ from "jquery"
 import moment from "moment"
 import "bootstrap-datetimepicker"
 
+// show a greeting on load (support turbo)
+document.addEventListener("turbo:load", function() {
+  console.log("[SimpleForm::Datetimepicker] ❤️");
+});
+
 // Modern ES6 version of the CoffeeScript functionality
 document.addEventListener('DOMContentLoaded', function() {
   const datePickers = document.querySelectorAll("input[data-behaviour='date_picker']");
