@@ -26,14 +26,14 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", ">= 8.0"
   spec.add_dependency "simple_form"
-  spec.add_dependency "momentjs-rails"
-  spec.add_dependency "bootstrap3-datetimepicker-rails"
 
   spec.add_development_dependency "guard-bundler"
   spec.add_development_dependency "guard-rspec"
+  spec.add_development_dependency "guard-standardrb"
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "bootsnap"
   spec.add_development_dependency "pry-rails"
   spec.add_development_dependency "capybara"
   spec.add_development_dependency "sqlite3", "~> 2.1"
+  spec.add_development_dependency "standard"
 end

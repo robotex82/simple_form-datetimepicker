@@ -1,26 +1,26 @@
 # SimpleForm::Datetimepicker
-Short description and motivation.
+
+HTML5 native datetime pickers for Simple Form.
 
 ## Usage
 
-Add the JavaScript to your application:
+Use in your simple form:
 
-    # app/javascript/application.js
-    import "simple_form-datetimepicker"
+```erb
+# date picker only
+<%= f.input :start_at, as: :date_picker %>
 
-Add the CSS to your application:
+# date time picker  
+<%= f.input :start_at, as: :date_time_picker %>
+```
 
-    # app/assets/stylesheets/application.css
-    @import "bootstrap-datetimepicker";
-    @import "simple_form-datetimepicker";
+## Features
 
-Use in in your simple form:
-
-    # date picker only
-    = form.input :start_at, as: :date_picker
-
-    # date time picker
-    = form.input :start_at, as: :date_time_picker
+- Native HTML5 datetime inputs
+- No JavaScript dependencies
+- Better mobile experience
+- Built-in accessibility
+- Zero configuration required
 
 ## Installation
 Add this line to your application's Gemfile:
