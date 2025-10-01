@@ -4,13 +4,13 @@ $:.push File.expand_path("lib", __dir__)
 require "simple_form/datetimepicker/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "simple_form-datetimepicker"
-  spec.version     = SimpleForm::Datetimepicker::VERSION
-  spec.authors     = [ "BeeGood IT" ]
-  spec.email       = [ "info@beegoodit.de" ]
-  spec.homepage    = "https://github.com/robotex82/simple_form-datetimepicker"
-  spec.summary     = "Date(time)picker for Simple Form"
-  spec.license     = "MIT"
+  spec.name = "simple_form-datetimepicker"
+  spec.version = SimpleForm::Datetimepicker::VERSION
+  spec.authors = ["BeeGood IT"]
+  spec.email = ["info@beegoodit.de"]
+  spec.homepage = "https://github.com/robotex82/simple_form-datetimepicker"
+  spec.summary = "Date(time)picker for Simple Form"
+  spec.license = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
   # to allow pushing to a single host or delete this section to allow pushing to any host.

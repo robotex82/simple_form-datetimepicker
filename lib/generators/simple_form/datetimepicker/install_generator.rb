@@ -2,12 +2,12 @@ module SimpleForm
   module Datetimepicker
     module Generators
       class InstallGenerator < Rails::Generators::Base
-        desc 'Generates the initializer'
+        desc "Generates the initializer"
 
-        source_root File.expand_path('../templates', __FILE__)
+        source_root File.expand_path("../templates", __FILE__)
 
         def generate_initializer
-          template 'initializer.rb', 'config/initializers/simple_form-datetimepicker.rb'
+          template "initializer.rb", "config/initializers/simple_form-datetimepicker.rb"
         end
 
         # Add importmap pins
